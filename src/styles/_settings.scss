@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+$font1: 'Kdam Thmor Pro', sans-serif;
+$font2: 'Archivo', sans-serif;
+$white:#FFFFFF;
+$yellow:#90702F;
+$blue:#5367F8;
+$black:#19252E;
+
+
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+.root{
+    position: relative;
+}
+@mixin centera{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin centerf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    font-family: $font1;
+}
+h1{
+    font-size: clamp(20px, 6vw, 130px);
+    letter-spacing: 2px;
+}
+h2{
+    font-size: clamp(20px, 4vw, 65px);
+    letter-spacing: 2px;
+}
+p{
+    line-height: 25px;
+    font-size: clamp(14px, 1.1vw, 18px);
+    font-family: $font2;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    @include centera;
+    border-top: 5px solid $yellow;
+    border-right: 5px solid $yellow;
+    top: 25%;
+}

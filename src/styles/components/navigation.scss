@@ -1,0 +1,48 @@
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 50000;
+    .logo{
+        width: 20%;
+        height: 100%;
+        a{
+            width: 80%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin-top: 1vh;
+            }
+        }
+    }
+    nav{
+        width: 70%;
+        height: 100%;
+        @include centerf;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style-type: none;
+                cursor: pointer;
+                a{
+                    font-family: $font2;
+                    text-decoration: none;
+                    font-size: clamp(12px, 1.1vw,25px);
+                    color: white;
+                    cursor: pointer;
+                    transition: .5s ease-out;
+                }
+                &:hover a{
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
