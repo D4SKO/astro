@@ -34,40 +34,30 @@ function Home() {
         <div className="trois">
             <div className="center">
                 <a className="img">
-                    <p className="titre">Le planétaire</p>
                     <div className="hover">
                         <div className="txt">
+                        <p>LE CIEL PROFOND</p>
                         <hr />
                         <p className='para'>Le planétaire est un sous-groupe de l’astronomie qui consiste à observer les objets qui se situent dans notre système solaire : des planètes ou des satellites naturels.  </p>
-                        <div className="fleche">
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                         </div>
                     </div>
                     <img src={home1} alt="planetaire" />
                 </a>
                 <a className="img">
-                <p className="titre">Le ciel profond</p>
                     <div className="hover">
                         <div className="txt">
-                        <hr />
-                        <p className='para'>Le ciel profond est un sous-groupe de l’astronomie qui consiste à observer les objets qui se situent en dehors de notre système solaire : des galaxies, des nébuleuses ou encore des amas stellaires.  </p>
-                        <div className="fleche">
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
+                            <p>LE CIEL PROFOND</p>
+                            <hr />
+                            <p className='para'>Le ciel profond est un sous-groupe de l’astronomie qui consiste à observer les objets qui se situent en dehors de notre système solaire : des galaxies, des nébuleuses ou encore des amas stellaires.  </p>
                         </div>
                     </div>
                     <img src={home2} alt="ciel profond" />
                 </a>
                 <a className="img">
-                <p className="titre">Les instruments</p>
                     <div className="hover">
                         <div className="txt">
                         <hr />
                         <p className='para'>Le planétaire est un sous-groupe de l’astronomie qui consiste à observer les objets qui se situent dans notre système solaire : des planètes ou des satellites naturels.  </p>
-                        <div className="fleche">
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                         </div>
                     </div>
                     <img src={home3} alt="instruments" />
@@ -78,44 +68,35 @@ function Home() {
             <p className="h2">Les applications utiles</p>
             <div className="center">
                 <div className="categorie">
+                <i class="fa-solid fa-right-long"></i>
                     <div className="hover">
                     </div>
                     <div className="txt">
                         <div className="h2">SKYLIVE</div>
                         <hr />
                         <p className="para">Lorsqu'on souhaite observer avec son téléscope il vaut mieux d'abord se renseigner sur les condtions d'observations pour la nuit qui arrive. Avec cette apllication vous serez directement renseigné sur les perturbation atmosphérique. Malheuseument l'application ne se trouve que dans l'app store mais il existe des équivalents en ligne.</p>
-                        <div className="lien">
-                            <p>voir le site</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                     </div>
                     <img src={cate1} alt="" />
                 </div>
                 <div className="categorie">
+                <i class="fa-solid fa-right-long"></i>
                     <div className="hover">
                     </div>
                     <div className="txt">
                         <div className="h2">ISS DETECTOR</div>
                         <hr />
                         <p className="para">Un grand classique des application astro ! Le passage de la station spatial internationalle est un évenement à ne pas manquer. Elle se situe à 400km d'altitude et file à 28.000km/h. Avec cette application pour smartphone soit au courant de chacun de ses passages au dessus de ta ville.</p>
-                        <div className="lien">
-                            <p>voir le site</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                     </div>
                     <img src={cate2} alt="" />
                 </div>
                 <div className="categorie">
+                <i class="fa-solid fa-right-long"></i>
                 <div className="hover">
                     </div>
                     <div className="txt">
                         <div className="h2">LIGHT POLLUTION MAP</div>
                         <hr />
                         <p className="para">Les nuages ou les perturabtion atmospheriques ne sont pas les seuls à pouvoir vous ennuyer... En effet, de nos jours la pollution lumineuse est de plus en plus présente et malheureusement elle nous empêche de pouvoir observer dans de bonne conditions. Light Pollution Map place sur une carte les zones les plus exposées à cette pollution.</p>
-                        <div className="lien">
-                            <p>voir le site</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                     </div>
                     <img src={cate3} alt="" />
                 </div>
@@ -126,10 +107,6 @@ function Home() {
                         <div className="h2">ISS DETECTOR</div>
                         <hr />
                         <p className="para">Un grand classique des application astro ! Le passage de la station spatial internationalle est un évenement à ne pas manquer. Elle se situe à 400km d'altitude et file à 28.000km/h. Avec cette application pour smartphone soit au courant de chacun de ses passages au dessus de ta ville.</p>
-                        <div className="lien">
-                            <p>voir le site</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                     </div>
                     <img src={cate4} alt="" />
                 </div>
@@ -140,10 +117,6 @@ function Home() {
                         <div className="h2">ISS DETECTOR</div>
                         <hr />
                         <p className="para">Un grand classique des application astro ! Le passage de la station spatial internationalle est un évenement à ne pas manquer. Elle se situe à 400km d'altitude et file à 28.000km/h. Avec cette application pour smartphone soit au courant de chacun de ses passages au dessus de ta ville.</p>
-                        <div className="lien">
-                            <p>voir le site</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                     </div>
                     <img src={cate5} alt="" />
                 </div>
@@ -154,10 +127,6 @@ function Home() {
                         <div className="h2">ISS DETECTOR</div>
                         <hr />
                         <p className="para">Un grand classique des application astro ! Le passage de la station spatial internationalle est un évenement à ne pas manquer. Elle se situe à 400km d'altitude et file à 28.000km/h. Avec cette application pour smartphone soit au courant de chacun de ses passages au dessus de ta ville.</p>
-                        <div className="lien">
-                            <p>voir le site</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
                     </div>
                     <img src={cate6} alt="" />
                 </div>

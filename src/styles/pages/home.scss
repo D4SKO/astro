@@ -27,7 +27,7 @@
     }
     .scroll_bottom{
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         background-color: white;
         position: relative;
         .txt{
@@ -142,6 +142,7 @@
             cursor: pointer;
             display: flex;
             position: relative;
+            flex-direction: column;
             .titre{
                 @include centera;
                 z-index: 6000;
@@ -162,7 +163,8 @@
                 z-index: 5000;
                 background-color: #19252e60;
                 display: flex;
-                align-items: flex-end;
+                justify-content: flex-end;
+                flex-direction: column;
                 transition: .3s ease-out;
                 transform: translateY(100%);
                 .txt{
@@ -174,26 +176,13 @@
                     background-color: $yellow;
                     margin: 1vh 0;
                     padding: 0 10px;
+                    width: 100%;
                 }
                 .para{
                     color: white;
                     font-size: clamp(14px, 1vw, 15px);
-                    padding-bottom: 2vh;
+                    margin-bottom: 2vh;
                     padding: 0 10px;
-                }
-                .fleche{
-                    width: 90%;
-                    height: 1vh;
-                    margin: 2vh auto;
-                    display: flex;
-                    justify-content: flex-end;
-                    i{
-                        font-size: 1vw;
-                        transform-origin: 0% 100%;
-                        transform: scaleX(1.2);
-                        color: white;
-                        transition: .4s .3s ease-out;
-                    }
                 }
             }
             img{
@@ -211,19 +200,13 @@
                         transform: scaleX(1.5);
                     }
                 }
-                .titre{
-                    opacity: 1;
-                    top: 45%!important;
-                    left: 10px;
-                    transform: translate(0);
-                }
             }
            }
         }
     }
     .appli{
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         background-color: $black;
         display: flex;
         flex-direction: column;
@@ -235,9 +218,9 @@
             padding: 5vh 0;
         }
         .center{
-            width: 65%;
+            width: 60%;
             height: 75%;
-            margin-top: 5vh;
+            margin-top: 2vh;
             display: flex;
             flex-wrap: wrap;
             .categorie{
@@ -248,16 +231,23 @@
                 overflow: hidden;
                 transition: transform .5s ease-out;
                 position: relative;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                i{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 6000;
+                }
                 .txt{
                     width: 95%;
                     height: auto;
-                    bottom: 25px;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
                     z-index: 60000;
                     transition: .2s ease-out;
                     opacity: 0;
+                    position: relative;
+                    margin-bottom: 2vh;
                     .h2{
                         text-align-last: left;
                         padding:00;
@@ -280,28 +270,6 @@
                     .h2, hr, .para{
                         transform: translateY(-300px);
                         transition: .5s ease-out;
-                    }
-                    .lien{
-                        height: 2vh;
-                        margin-top: 3vh;
-                        width: 85%;
-                        margin: 0 auto;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        p{
-                            color: $yellow;
-                            text-decoration: underline;
-                        }
-                        i{
-                            z-index: 7000;
-                            font-size: 1.5vw;
-                            color: white;
-                            margin-left: 1vh;
-                            transform-origin: 0% 100%;
-                            opacity: 0;
-                            transition: transform .8s  ease-out, opacity .5s ease-out;
-                        }
                     }
                 }
                 .hover{
@@ -349,12 +317,6 @@
 }
 @media screen  and (max-width:1200px) and (min-width:600px) {
     .trois{
-        .titre{
-            left: 10px!important;
-            transform: translate(0)!important;
-            opacity: 1!important;
-            top: 35%!important;
-        }
         .hover{
             transform: translate(0)!important;
             p{
