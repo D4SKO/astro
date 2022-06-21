@@ -40,20 +40,21 @@ h1{
     font-size: clamp(20px, 6vw, 130px);
     letter-spacing: 2px;
 }
-h2{
-    font-size: clamp(20px, 4vw, 65px);
+.h2{
+    font-size: clamp(20px, 2vw, 35px);
     letter-spacing: 2px;
+    font-family: $font1;
 }
 p{
-    line-height: 25px;
-    font-size: clamp(14px, 1.1vw, 18px);
+    line-height: 30px;
+    font-size: clamp(12px, 1.1vw, 25px);
     font-family: $font2;
 }
 .arrow{
     width: 30px;
     height: 30px;
     @include centera;
-    border-top: 5px solid $yellow;
-    border-right: 5px solid $yellow;
+    border-top:10px solid $yellow;
+    border-right: 10px solid $yellow;
     top: 25%;
 }
