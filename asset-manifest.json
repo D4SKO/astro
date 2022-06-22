@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/astro/static/css/main.48955544.css",
+    "main.js": "/astro/static/js/main.c6bb268d.js",
+    "static/media/vid.mp4": "/astro/static/media/vid.029eaf3e155f72d55574.mp4",
+    "static/media/cate3.png": "/astro/static/media/cate3.f24c9b03c35bce510dfc.png",
+    "static/media/cate5.PNG": "/astro/static/media/cate5.b983966a448961cafec4.PNG",
+    "static/media/cate1.jpg": "/astro/static/media/cate1.b78d92ce92889177bbc3.jpg",
+    "static/media/home2.webp": "/astro/static/media/home2.0f51c92e62023d58a4c2.webp",
+    "static/media/cate4.png": "/astro/static/media/cate4.dc68cf3914be6373ad12.png",
+    "static/media/home1.jpg": "/astro/static/media/home1.2c888aec85476c13564f.jpg",
+    "static/media/cate6.png": "/astro/static/media/cate6.e85cf11ba6e125c41e72.png",
+    "static/media/cate2.png": "/astro/static/media/cate2.0a3f7a9690b4df848261.png",
+    "static/media/home3.jpg": "/astro/static/media/home3.c393450d2b02134954a0.jpg",
+    "static/media/homefond.jpg": "/astro/static/media/homefond.2342b347218560b40696.jpg",
+    "index.html": "/astro/index.html",
+    "main.48955544.css.map": "/astro/static/css/main.48955544.css.map",
+    "main.c6bb268d.js.map": "/astro/static/js/main.c6bb268d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48955544.css",
+    "static/js/main.c6bb268d.js"
+  ]
+}
