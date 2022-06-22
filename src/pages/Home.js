@@ -34,9 +34,10 @@ function Home() {
         <div className="trois">
             <div className="center">
                 <a className="img">
+                    <p className="titre">LE PLANETAIRE</p>
                     <div className="hover">
                         <div className="txt">
-                        <p>LE CIEL PROFOND</p>
+                        <p>LE PLANETAIRE</p>
                         <hr />
                         <p className='para'>Le planétaire est un sous-groupe de l’astronomie qui consiste à observer les objets qui se situent dans notre système solaire : des planètes ou des satellites naturels.  </p>
                         </div>
@@ -44,6 +45,7 @@ function Home() {
                     <img src={home1} alt="planetaire" />
                 </a>
                 <a className="img">
+                    <p className="titre">LE CIEL PROFOND</p>
                     <div className="hover">
                         <div className="txt">
                             <p>LE CIEL PROFOND</p>
@@ -54,8 +56,10 @@ function Home() {
                     <img src={home2} alt="ciel profond" />
                 </a>
                 <a className="img">
+                    <p className="titre">LES INSTRUMENTS</p>
                     <div className="hover">
                         <div className="txt">
+                        <p>LES INSTRUMENTS</p>
                         <hr />
                         <p className='para'>Le planétaire est un sous-groupe de l’astronomie qui consiste à observer les objets qui se situent dans notre système solaire : des planètes ou des satellites naturels.  </p>
                         </div>

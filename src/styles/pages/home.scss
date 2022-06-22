@@ -167,6 +167,10 @@
                 flex-direction: column;
                 transition: .3s ease-out;
                 transform: translateY(100%);
+                p:first-child{
+                    color: white;
+                    padding: 0 10px;
+                }
                 .txt{
                     height: auto;
                 }
@@ -176,7 +180,6 @@
                     background-color: $yellow;
                     margin: 1vh 0;
                     padding: 0 10px;
-                    width: 100%;
                 }
                 .para{
                     color: white;
@@ -194,6 +197,9 @@
                 object-fit: cover;
             }
             &:hover{
+                .titre{
+                    opacity: 0;
+                }
                 .hover{
                     transform: translate(0);
                     i{
@@ -236,9 +242,13 @@
                 justify-content: center;
                 i{
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    z-index: 6000;
+                    top: 15px;
+                    right: 15px;
+                    z-index: 600000;
+                    font-size: clamp(18px, 2vw, 35px);
+                    color: white;
+                    transition: .3s ease-out;
+                    opacity: 0;
                 }
                 .txt{
                     width: 95%;
@@ -316,32 +326,113 @@
     }
 }
 @media screen  and (max-width:1200px) and (min-width:600px) {
-    .trois{
-        .hover{
-            transform: translate(0)!important;
-            p{
-                line-height: 25px;
+    .home{
+        .trois{
+            .center .img .titre{
+                opacity: 0;
             }
-        }
-    }
-    .para{
-        margin-bottom: 0!important;
-    }
-    .appli .center{
-        height: 85%!important;
-    }
-}
-@media screen  and (max-width:900px) and (min-width:600px) {
-    .appli{
-        .center{
-            width: 95%!important;
-            height: 60%!important;
+            .hover{
+                transform: translate(0)!important;
+                p{
+                    line-height: 25px;
+                }
+            }
         }
         .para{
             margin-bottom: 0!important;
         }
-        .lien{
-            transform: translateY(10px);
+        .appli .center{
+            height: 65%!important;
+        }
+    }
+}
+@media screen  and (max-width:900px) and (min-width:600px) {
+    .home{
+        .appli{
+            .center{
+                width: 95%!important;
+                height: 60%!important;
+            }
+            .para{
+                margin-bottom: 0!important;
+            }
+            .lien{
+                transform: translateY(10px);
+            }
+        }
+    }
+}
+@media screen  and (max-width:600px) {
+    .home{
+        .first{
+            height: 85vh;
+            h1{
+                white-space: nowrap;
+            }
+        }
+        .scroll_bottom{
+            height: 70vh;
+            .h2{
+                top: 10%;
+            }
+            .txt{
+                transform: translate(-50%, -35%);
+                width: 90%;
+            }
+        }
+        .second{
+            height: 20vh;
+        }
+        .trois{
+            height: auto;
+            margin-bottom: 2vh;
+            .center{
+                height: auto;
+                width: 90%;
+                flex-direction: column;
+                .img{
+                    height: 30vh;
+                    width: 100%;
+                    margin-top: 2vh;
+                    .hover{
+                        transform: translate(0);
+                        p{
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .appli{
+            height: auto;
+            .center{
+                flex-direction: column;
+                width: 90%;
+                .categorie{
+                    height: 35vh;
+                    width: 100%;
+                    margin: 1vh 0;
+                    border: 1px solid white;
+                    i{
+                        display: flex;
+                        opacity: 1;
+                    
+                    }
+                    img{
+                        filter: blur(2px);
+                    }
+                    .hover{
+                        opacity: 1;
+                    }
+                    .txt{
+                        opacity: 1;
+                    }
+                    .h2, hr, .para{
+                        transform: translateY(0)!important;
+                        z-index: 80000;
+                    }
+                }
+            }
         }
     }
 }
